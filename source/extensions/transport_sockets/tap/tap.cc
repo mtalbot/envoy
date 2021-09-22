@@ -69,7 +69,7 @@ bool TapSocketFactory::implementsSecureTransport() const {
 bool TapSocketFactory::usesProxyProtocolOptions() const {
   return transport_socket_factory_->usesProxyProtocolOptions();
 }
-
+bool TapSocketFactory::supportsAlpn() const { return transport_socket_factory_->supportsAlpn(); }
 } // namespace Tap
 } // namespace TransportSockets
 } // namespace Extensions

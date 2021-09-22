@@ -42,6 +42,7 @@ public:
   createTransportSocket(Network::TransportSocketOptionsConstSharedPtr options) const override;
   bool implementsSecureTransport() const override;
   bool usesProxyProtocolOptions() const override;
+  bool supportsAlpn() const override;
 
 private:
   Network::TransportSocketFactoryPtr transport_socket_factory_;
